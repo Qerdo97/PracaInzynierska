@@ -1,9 +1,9 @@
 terraform {
   backend "azurerm" {
-    resource_group_name   = "Terraform"
-    storage_account_name  = "tfstate31973"
-    container_name        = "tfstate"
-    key                   = "terraform.tfstate"
+    resource_group_name = "Terraform"
+    storage_account_name = "tfstate31973"
+    container_name = "tfstate"
+    key = "terraform.tfstate"
   }
   required_providers {
     azurerm = {
@@ -18,5 +18,12 @@ provider "azurerm" {
 }
 resource "azurerm_resource_group" "Terraform_resource_group" {
   name = "Terraform"
-  location = "northeurope"
+  location = var.location
+}
+resource "random_id" "randomId" {
+  keepers = {
+    # Generate a new ID only when a new resource group is defined
+    resource_group_name = azurerm_resource_group.Terraform_resource_group.name
+  }
+  byte_length = 8
 }
