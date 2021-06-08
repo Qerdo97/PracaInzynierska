@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RESOURCE_GROUP_NAME=Terraform
+RESOURCE_GROUP_NAME=TerraformState
 STORAGE_ACCOUNT_NAME=tfstate$RANDOM
 CONTAINER_NAME=tfstate
 

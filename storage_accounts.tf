@@ -14,6 +14,15 @@ resource "azurerm_storage_account" "static_storage" {
   resource_group_name = azurerm_resource_group.Terraform_resource_group.name
 
   static_website {
-    index_document = "sites/index.html"
+    index_document = "index.html"
   }
+}
+resource "azurerm_storage_blob" "static_web_html_file" {
+  name = "index.html"
+  content_type = "text/html"
+  storage_account_name = azurerm_storage_account.static_storage.name
+  storage_container_name = "$web"
+  type = "Block"
+  source = "./sites/index.html"
+  depends_on = [azurerm_storage_account.static_storage]
 }

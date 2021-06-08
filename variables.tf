@@ -23,3 +23,8 @@ variable "tags" {
   type = string
   default = "Managed by Terraform"
 }
+variable "access_key" {
+  description = "Access key for TF State"
+  type = string
+  default = "PZuxF4ufI1QN+W04KY6gioLJbwOroBRp8/Mn4xhZP4dmQTIddzGd+zKBcqZ/HcmDS2V08PaluklRhdlkeqJQ8Q=="
+}
