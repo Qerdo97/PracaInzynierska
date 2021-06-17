@@ -28,6 +28,7 @@ resource "azurerm_linux_virtual_machine" "VM-Prism" {
   boot_diagnostics {
     storage_account_uri = azurerm_storage_account.storage_account-diagnostic.primary_blob_endpoint
   }
+  tags = var.tags
 }
 
 resource "azurerm_windows_virtual_machine" "VM-Gemstone" {
@@ -53,4 +54,5 @@ resource "azurerm_windows_virtual_machine" "VM-Gemstone" {
   boot_diagnostics {
     storage_account_uri = azurerm_storage_account.storage_account-diagnostic.primary_blob_endpoint
   }
+  tags = var.tags
 }

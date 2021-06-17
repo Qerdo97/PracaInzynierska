@@ -20,8 +20,10 @@ variable "resource_group_name" {
 }
 variable "tags" {
   description = "Default group for everything made by Terraform"
-  type = string
-  default = "Managed by Terraform"
+  type = map(string)
+  default = {
+    MANAGED = "by Terraform"
+  }
 }
 variable "access_key" {
   description = "Access key for TF State"

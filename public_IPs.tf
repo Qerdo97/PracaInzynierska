@@ -3,10 +3,12 @@ resource "azurerm_public_ip" "publicIP-Prism" {
   location = var.location
   resource_group_name = azurerm_resource_group.Terraform_resource_group.name
   allocation_method = "Dynamic"
+  tags = var.tags
 }
 resource "azurerm_public_ip" "publicIP-Gemstone" {
   name = "publicIP-Gemstone"
   location = var.location
   resource_group_name = azurerm_resource_group.Terraform_resource_group.name
   allocation_method = "Dynamic"
+  tags = var.tags
 }

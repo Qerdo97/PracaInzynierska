@@ -2,6 +2,7 @@ resource "azurerm_network_security_group" "NSG-main" {
   name = "NSG-main"
   location = var.location
   resource_group_name = azurerm_resource_group.Terraform_resource_group.name
+  tags = var.tags
 
   security_rule {
     name = "RDP"

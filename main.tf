@@ -19,6 +19,7 @@ provider "azurerm" {
 resource "azurerm_resource_group" "Terraform_resource_group" {
   name = "Terraform"
   location = var.location
+  tags = var.tags
 }
 resource "random_id" "randomId" {
   keepers = {

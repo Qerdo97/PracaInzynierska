@@ -9,6 +9,7 @@ resource "azurerm_network_interface" "NIC-Prism" {
     private_ip_address_allocation = "Dynamic"
     public_ip_address_id = azurerm_public_ip.publicIP-Prism.id
   }
+  tags = var.tags
 }
 
 # Connect the security group to the network interface
@@ -28,7 +29,7 @@ resource "azurerm_network_interface" "NIC-Gemstone" {
     private_ip_address_allocation = "Dynamic"
     public_ip_address_id = azurerm_public_ip.publicIP-Gemstone.id
   }
-
+  tags = var.tags
 }
 
 resource "azurerm_network_interface_security_group_association" "NIC-Gemstone-to-NSG-main" {

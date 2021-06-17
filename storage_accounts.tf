@@ -4,6 +4,7 @@ resource "azurerm_storage_account" "storage_account-diagnostic" {
   location = var.location
   account_replication_type = "LRS"
   account_tier = "Standard"
+  tags = var.tags
 }
 
 resource "azurerm_storage_account" "static_storage" {
@@ -16,6 +17,7 @@ resource "azurerm_storage_account" "static_storage" {
   static_website {
     index_document = "index.html"
   }
+  tags = var.tags
 }
 resource "azurerm_storage_blob" "static_web_html_file" {
   name = "index.html"
