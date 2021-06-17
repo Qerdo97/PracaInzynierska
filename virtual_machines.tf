@@ -23,7 +23,7 @@ resource "azurerm_linux_virtual_machine" "VM-Prism" {
   computer_name = "prism"
   disable_password_authentication = false
   admin_username = var.admin_username
-  admin_password = var.admin_password
+  admin_password = random_password.password.result
 
   boot_diagnostics {
     storage_account_uri = azurerm_storage_account.storage_account-diagnostic.primary_blob_endpoint
@@ -32,7 +32,7 @@ resource "azurerm_linux_virtual_machine" "VM-Prism" {
 }
 
 resource "azurerm_windows_virtual_machine" "VM-Gemstone" {
-  admin_password = var.admin_password
+  admin_password = random_password.password.result
   admin_username = var.admin_username
   location = var.location
   name = "Gemstone"
