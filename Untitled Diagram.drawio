@@ -1,4 +1,4 @@
-<mxfile modified="2021-10-16T23:54:35.745Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 Edg/94.0.992.50" etag="gXYeQbETAmfHnVbrCehM" version="15.5.4" type="github">
+<mxfile modified="2021-10-17T00:36:06.831Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 Edg/94.0.992.50" etag="6O9McnQH-d6cDt-te6N5" version="15.5.4" type="github">
   <diagram id="WI9T0HZ2pTsCkuznbFz-" name="Page-1">
     <mxGraphModel dx="3253" dy="2489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -169,9 +169,6 @@
         </mxCell>
         <mxCell id="WmXbn06XCtGJaw7l62xg-37" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Virtual_Networks.svg;labelBackgroundColor=default;labelBorderColor=none;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="766.88" y="140" width="67" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="WmXbn06XCtGJaw7l62xg-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1" source="WmXbn06XCtGJaw7l62xg-35" target="WmXbn06XCtGJaw7l62xg-37">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WmXbn06XCtGJaw7l62xg-35" value="&lt;span style=&quot;&quot;&gt;Sieciowa grupa &lt;br&gt;zabezpieczeń&lt;br&gt;(NSG)&lt;/span&gt;" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Network_Security_Groups.svg;labelBackgroundColor=#99FF99;labelBorderColor=none;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="771" y="8" width="56.00000000000001" height="68" as="geometry" />
